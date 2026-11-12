@@ -1,0 +1,22 @@
+name: Bonjour CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  bonjour:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Avant checkout
+        run: ls -la
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Après checkout
+        run: ls -la
+
+      - name: Nombre de fichiers Python
+        run: |
+          find . -name "*.py" -not -path "./.git/*" | wc -l   

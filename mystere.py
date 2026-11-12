@@ -1,6 +1,6 @@
 import random
 
-secret = random.randint(1, 100)   
+secret = random.randint(1, 100)
 while True:
     guess = int(input("Guess the number between 1 and 100: "))
     if guess < secret:
@@ -10,7 +10,7 @@ while True:
     else:
         print("Congratulations! You've guessed the number.")
         break
-   
+
 # Corrected syntax and error handling
 user_input = input("guess the number between 1 and 100: ")
 
@@ -21,5 +21,5 @@ if user_input.strip():
     except ValueError:
         print("Invalid input. Please enter a number.")
 else:
-    print("Input cannot be empty.")   
-import random 
+    print("Input cannot be empty.")
+import random
