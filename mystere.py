@@ -22,4 +22,4 @@ if user_input.strip():
         print("Invalid input. Please enter a number.")
 else:
     print("Input cannot be empty.")   
-     import random 
+import random 
