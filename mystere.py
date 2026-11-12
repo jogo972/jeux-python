@@ -10,7 +10,7 @@ while True:
     else:
         print("Congratulations! You've guessed the number.")
         break
-
+def ma_fonction(   
 # Corrected syntax and error handling
 user_input = input("guess the number between 1 and 100: ")
 
@@ -22,3 +22,4 @@ if user_input.strip():
         print("Invalid input. Please enter a number.")
 else:
     print("Input cannot be empty.")   
+     import random 
