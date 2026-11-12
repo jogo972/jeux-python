@@ -10,7 +10,7 @@ while True:
     else:
         print("Congratulations! You've guessed the number.")
         break
-def ma_fonction(   
+   
 # Corrected syntax and error handling
 user_input = input("guess the number between 1 and 100: ")
 
