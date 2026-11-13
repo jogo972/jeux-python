@@ -19,3 +19,14 @@ jobs:
       - name: Vérifier la syntaxe
         run: |
           python -m py_compile $(find . -name "*.py" -not -path "./.git/*")   
+      - name: Résumé
+        run: |
+          NB_PY=$(find . -name "*.py" -not -path "./.git/*" | wc -l)
+          NB_LIGNES=$(find . -name "*.py" -not -path "./.git/*" -exec cat {} + | wc -l)
+          {
+            echo "## Résumé"
+            echo ""
+            echo "| Fichiers Python | Lignes de code |"
+            echo "|---|---|"
+            echo "| $NB_PY | $NB_LIGNES |"
+          } >> "$GITHUB_STEP_SUMMARY"   
